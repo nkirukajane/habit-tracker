@@ -193,11 +193,34 @@ h1 {
   border-radius: 6px;
 }
 
+#habit-input {
+  min-width: 0;
+}
+
+.habit-list li {
+  flex-wrap: wrap;
+  gap: 10px;
+}
 .habit-info {
+  flex: 1 1 180px;
   min-width: 0;
 }
 .habit-info span {
   overflow-wrap: anywhere;
+}
+.edit-input {
+  width: 100%;
+  min-width: 0;
+}
+.actions {
+  flex: 0 0 auto;
+  align-items: center;
+}
+.actions button {
+  white-space: nowrap;
+}
+.day {
+  flex-shrink: 0;
 }
 @media (max-width: 480px) {
   body {
@@ -205,13 +228,19 @@ h1 {
   }
   .app {
     margin: 10px auto;
+    padding: 16px;
   }
-  #habit-list li {
-    flex-direction: colum;
-    align-items: stretch;
-    gap: 10px;
+  h1 {
+    font-size: 24px;
   }
-  .action {
-    justify-content: flex-end;
+  .actions {
+    flex: 1 1 100%;
+  }
+  #habit-list li .actions button {
+    flex: 1;
+    padding: 8px 4px;
+  }
+  #habit-list li .actions button:first-child {
+    flex: 2;
   }
 }

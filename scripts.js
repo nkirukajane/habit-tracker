@@ -1,5 +1,5 @@
 const STORAGE_KEY = "habit-tracker-data";
-const WEEKDAY_LETTERS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const WEEKDAY_LETTERS = ["S", "M", "T", "W", "T", "F", "S"];
 
 function saveHabits() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(habits));
